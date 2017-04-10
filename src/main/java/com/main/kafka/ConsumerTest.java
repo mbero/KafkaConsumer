@@ -1,13 +1,19 @@
 package com.main.kafka;
 
+import com.main.cassandra.CassandraClient;
+
 import kafka.consumer.ConsumerIterator;
 import kafka.consumer.KafkaStream;
 
 public class ConsumerTest implements Runnable {
 	private KafkaStream m_stream;
 	private int m_threadNumber;
-
+	private CassandraClient cassandraClient;
+	
 	public ConsumerTest(KafkaStream a_stream, int a_threadNumber) {
+		cassandraClient = new CassandraClient();
+		cassandraClient.connect("127.0.0.1");
+		
 		m_threadNumber = a_threadNumber;
 		m_stream = a_stream;
 	}

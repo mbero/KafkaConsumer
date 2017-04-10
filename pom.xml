@@ -7,6 +7,21 @@
 	<name>KafkaConsumer</name>
 	<description>Simple java consumer for Apache Kafka</description>
 	<dependencies>
+		<dependency>
+			<groupId>com.datastax.cassandra</groupId>
+			<artifactId>cassandra-driver-core</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.datastax.cassandra</groupId>
+			<artifactId>cassandra-driver-mapping</artifactId>
+			<version>3.0.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.datastax.cassandra</groupId>
+			<artifactId>cassandra-driver-mapping</artifactId>
+			<version>3.0.0</version>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.apache.kafka/kafka_2.10 -->
 		<dependency>
 			<groupId>org.apache.kafka</groupId>
