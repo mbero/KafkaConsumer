@@ -1,5 +1,7 @@
 package com.main.cassandra;
 
+import java.util.UUID;
+
 import com.datastax.driver.core.Cluster;
 import com.datastax.driver.core.Host;
 import com.datastax.driver.core.Metadata;
@@ -25,6 +27,15 @@ public class CassandraClient {
 					host.getAddress(),
 					host.getRack());
 		}
+	}
+	
+	/**
+	 * Generates random uuid
+	 * @return UUID object
+	 */
+	public UUID getUUID(){
+		UUID uuid = UUID.randomUUID();
+		return uuid;
 	}
 	
 	/**
