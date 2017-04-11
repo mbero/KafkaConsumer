@@ -14,12 +14,9 @@ public class CassandraClientTest {
 	@Before
 	public void setUp() throws Exception {
 		cassandraClient = new CassandraClient();
-	}
-
-	@Test
-	public void testConnect() {
 		cassandraClient.connect("127.0.0.1");
 	}
+
 
 	@Test
 	public void testExecuteQuery() {

@@ -20,7 +20,9 @@ public class CassandraClient {
 		Metadata metadata = cluster.getMetadata();
 		System.out.printf("Connected to cluster: %s\n", metadata.getClusterName());
 		for (Host host : metadata.getAllHosts()) {
-			System.out.printf("Datatacenter: %s; Host: %s; Rack: %s\n", host.getDatacenter(), host.getAddress(),
+			System.out.printf("Datatacenter: %s; Host: %s; Rack: %s\n",
+					host.getDatacenter(), 
+					host.getAddress(),
 					host.getRack());
 		}
 	}

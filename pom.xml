@@ -5,7 +5,7 @@
 	<artifactId>kafkaconsumer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>KafkaConsumer</name>
-	<description>Simple java consumer for Apache Kafka</description>
+	<description>Simple java consumer for Apache Kafka with methods for saving results into Cassandra</description>
 	<dependencies>
 		<dependency>
 			<groupId>com.datastax.cassandra</groupId>
